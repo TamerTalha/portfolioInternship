@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer S3</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="darkBackgroundHeader">
+        <a href="/index.html" class="headerLogo">
+            <p>TAMER CANDEMIR</p>
+        </a>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="" class="trigger">PROJECTS</a>
+                <ul class="dropdown">
+                    <li><a href="beyond.html">BEYOND</a></li>
+                    <li><a href="slaygency.html">SLAYGENCY</a></li>
+                    <li><a href="adiloncu.html">ADİL ÖNCÜ</a></li>
+                    <li><a href="board-game.html">BOARD GAME</a></li>
+                    <!-- <li><a href="">PORTFOLIO S3</a></li> -->
+                </ul>
+            </li>
+            <li><a href="los.html" class="textGradient">LOs</a></li>
+        </ul>
+    </header>
+    <main>
+        <!--BANNER IMG-->
+        <img src="/assets/img/beyondBanner.png" alt="" class="banner">
+        <section class="content">
+
+            <h1 class="projectTitleLarge">BEYOND</h1>
+            <p class="typeProj">Branding</p>
+
+            <div class="projDetails">
+                <p>Timeline</p>
+                <p>Client</p>
+                <p><b>1 WEEK</b></p>
+                <p><B>GROUP 4</B></p>
+            </div>
+
+            <br>
+            <p>
+                Beyond is a studio with a focus on creating designs that are beyond visuals, limits, and expectations.
+                In
+                this project, I mostly worked on the graphic design, namely, colors, font, visuals, logo, and icons.</p>
+            <br>
+
+            <h2>INSPIRATION</h2>
+            <p>We approached the inspiration phase of this project methodologically. We used mind mapping method that
+                helped us define our mission, find a suitable name and a catchy slogan. I tried to write as much as
+                possible using the color navy blue.</p>
+            <br>
+            <img src="/assets/img/inspirationBeyond.png" alt="">
+
+            <h3>MISSION</h3>
+            <p>Our mission is to create something deeper than just visuals, by maintaining trust and quality. We want to
+                go beyond default brand aesthetics and build real, meaningful connections between the brand and people.
+            </p>
+            <img src="/assets/img/missionBeyond.png" alt="">
+
+            <h3>MISSION</h3>
+            <img src="/assets/img/valuesBeyond.png" alt="">
+
+            <h2>DESIGN</h2>
+            <p>I collected various design ideas in a mood board. Being inspired from the mood board, I created a
+                stylescape, having several iterations for the logo and the color palette.</p>
+            <img src="/assets/img/moodboardBeyond.png" alt="">
+
+            <h3>COLOR PALETTE</h3>
+            <p>I created 3 different color palettes by iterating on the previous one. Every iteration is made based on
+                peer feedback.</p>
+            <img src="/assets/img/colorPaletteBeyond.png" alt="">
+
+            <h3>LOGOS</h3>
+            <p>I created several logos, tested them on different backgrounds, and we agreed on using one of my designs.
+            </p>
+            <img src="/assets/img/logosBeyond.png" alt="">
+
+            <h3>FINAL LOGO</h3>
+            <img src="/assets/img/finalLogoBeyond.png" alt="">
+
+            <h3>STYLESCAPE</h3>
+            <p>I gathered my designs in a stylescape. Adding the font, a slogan, visuals, and a campaign idea, I had the
+                final version in my hands.</p>
+            <img src="/assets/img/stylescapeBeyond.png" alt="">
+
+            <h2>PRESENTATION</h2>
+            <p>Before we moved on to making a brand guide, we had 2 feedback sessions with 4 different teachers. What
+                they all noted was that our mission was too broad, and what we promise to deliver was too general.
+                <br><br>
+                After having a long discussion as a group, I managed to convince them to go for rebranding. With a
+                narrower and more specified mission, we decided to turn this into a project in which we will learn and
+                have fun at the same time.</p>
+            <a href="slaygency.html" class="blueLink">See rebranding Project <i>&#x2197;</i></a>
+
+
+        </section>
+        <footer>
+            <h3>Still have some social <b class="textGradient">battery</b> left?</h3>
+            <h1>LET'S TALK!</h1>
+            <!-- <h2>INSTAGRAM</h2>
+            <h2>LINKEDIN</h2> -->
+            <h2 id="copyEmail">COPY EMAIL</h2>
+        </footer>
+
+        <script>
+
+            // COPY EMAIL FOOTER
+
+            const copyEmailEl = document.getElementById("copyEmail");
+
+  copyEmailEl.addEventListener("click", () => {
+    const email = "t.candemir@student.fontys.nl";
+    navigator.clipboard.writeText(email).then(() => {
+      // Store original text
+      const originalText = copyEmailEl.textContent;
+
+      // Apply styles and update text
+      copyEmailEl.textContent = "COPIED!";
+      copyEmailEl.style.backgroundColor = "#1e1e1e";
+      copyEmailEl.style.color = "#fff";
+
+      // Reset after 1.5 seconds
+      setTimeout(() => {
+        copyEmailEl.textContent = originalText;
+        copyEmailEl.style.backgroundColor = "";
+        copyEmailEl.style.color = "";
+      }, 1500);
+    });
+  });
+          </script>
+    </main>
+    
+</body>
+
+</html>

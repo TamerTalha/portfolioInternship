@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer S3</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="lightBackgroundHeader">
+        <a href="/index.html" class="headerLogo">
+            <p>TAMER CANDEMIR</p>
+        </a>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="" class="trigger">PROJECTS</a>
+                <ul class="dropdown">
+                    <li><a href="beyond.html">BEYOND</a></li>
+                    <li><a href="slaygency.html">SLAYGENCY</a></li>
+                    <li><a href="adiloncu.html">ADİL ÖNCÜ</a></li>
+                    <li><a href="board-game.html">BOARD GAME</a></li>
+                    <!-- <li><a href="">PORTFOLIO S3</a></li> -->
+                </ul>
+            </li>
+            <li><a href="los.html" class="textGradient">LOs</a></li>
+        </ul>
+    </header>
+    <main>
+        <!--BANNER IMG-->
+        <img src="/assets/img/slaygencyBanner.png" alt="" class="banner">
+        <section class="content">
+
+            <h1 class="projectTitleLarge">SLAYGENCY</h1>
+            <p class="typeProj">Branding</p>
+
+            <div class="projDetails">
+                <p>Timeline</p>
+                <p>Client</p>
+                <p><b>2 WEEKS</b></p>
+                <p><B>GROUP 4</B></p>
+            </div>
+
+            <br>
+            <p>
+                Slaygency (formerly Beyond) is a studio specializing in creating memorable products that will put a
+                smile on people's faces. As a proud member of this group, I worked on the brand identity and graphic
+                design of the project.</p>
+            <br>
+
+            <h2>INSPIRATION</h2>
+            <p>Using the mind mapping method helped us define our mission as a studio. It also sparkled a name idea in
+                my mind which actually became the name of our studio.</p>
+            <br>
+            <img src="/assets/img/inspirationSlaygency.png" alt="">
+
+            <h3>MISSION</h3>
+            <p>Our mission is to put a smile on people's faces. We do this by creating trendy and newer generational
+                designs. Currently, focusing on GenZ trends, jokes, and memes.</p>
+
+            <h3>NAME</h3>
+            <p>A word used a lot by the newer generations, “Slay”. I was thinking of names that could include words like
+                “Studio”, “Agency”, “GenZ”. Trying different combinations in my mind, I came up with the name Slaygency.
+                <br><br>
+                I proposed the name to my team and everyone agreed on it since it also sounds like “Slay Agency” or
+                “Slay GenZ”.
+            </p>
+
+            <h3>MOODBOARD</h3>
+            <p>To get an idea of what kind of designs we want to make and what kind of vibes we want to give to the
+                clients, I created a mood board in which I included GenZ design trends and memes.</p>
+            <img src="/assets/img/moodboardSlaygency.png" alt="">
+
+            <h2>DESIGN</h2>
+            <p>Being inspired from the mood boards, we make a stylescape, defining our colors, typography, and logo. I
+                mainly worked on the typography and the logo iterations.</p>
+            <img src="/assets/img/stylescapeSlaygency.png" alt="">
+
+            <h3>LOGO ITERATIONS</h3>
+            <p>Here are some of the logo iterations I have made. The ones below are iterations on a logo made by my
+                group mate Fabiana.</p>
+            <img src="/assets/img/logosSlaygency.png" alt="">
+
+            <h3>POSTER</h3>
+            <p>I made a poster that represents us as a group. I used pop colors, one of the logo iterations, and photos
+                of our group's members to make it memorable.</p>
+            <img src="/assets/img/posterSlaygency.png" alt="" style="max-width: 30vw; margin-left: 20vw;">
+
+            <h2>PRESENTATION</h2>
+            <p>I had this idea of starting the presentation as “Beyond”, showcase the updates, then at some point just
+                say “We thought this was boring, so we decided to re-brand!”. We did implement this idea, and it was
+                liked a lot by the teachers and peers.
+                <br><br>
+                On the slides, we made sure to use our colors and humor. I worked on the following pages:
+            </p>
+            <img src="/assets/img/presentationSlaygency.png" alt="">
+
+            <h2>PROJECT CHOICE</h2>
+            <p>From client presentations, our favorite project was the Board Game project by Petra and Maikel. We had so
+                much motivation and so many ideas going on that we stayed at school and discussed these ideas and wrote
+                some down in order not to forget if we got the project.</p>
+            <p>We got it!</p>
+            <a href="" class="blueLink">See board game project <i>&#x2197;</i></a>
+            <br>
+            <img src="/assets/img/choiceSlaygency.png" alt="" style="max-width: 30vw; margin-left: 20vw;">
+
+
+        </section>
+    <footer>
+            <h3>Still have some social <b class="textGradient">battery</b> left?</h3>
+            <h1>LET'S TALK!</h1>
+            <!-- <h2>INSTAGRAM</h2>
+            <h2>LINKEDIN</h2> -->
+            <h2 id="copyEmail">COPY EMAIL</h2>
+        </footer>
+
+        <script>
+
+            // COPY EMAIL FOOTER
+
+            const copyEmailEl = document.getElementById("copyEmail");
+
+  copyEmailEl.addEventListener("click", () => {
+    const email = "t.candemir@student.fontys.nl";
+    navigator.clipboard.writeText(email).then(() => {
+      // Store original text
+      const originalText = copyEmailEl.textContent;
+
+      // Apply styles and update text
+      copyEmailEl.textContent = "COPIED!";
+      copyEmailEl.style.backgroundColor = "#1e1e1e";
+      copyEmailEl.style.color = "#fff";
+
+      // Reset after 1.5 seconds
+      setTimeout(() => {
+        copyEmailEl.textContent = originalText;
+        copyEmailEl.style.backgroundColor = "";
+        copyEmailEl.style.color = "";
+      }, 1500);
+    });
+  });
+          </script>
+    </main>
+   
+</body>
+
+</html>

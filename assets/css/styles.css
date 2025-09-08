@@ -1,0 +1,343 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    cursor: crosshair;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Hide Scrollbar*/
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #1e1e1e;
+}
+
+.blueLink{
+    color: #1a00ff;
+    font-size: 1vw;
+}
+.blueLink i{ /*arrow icon next to links*/
+    font-size: 1.3vw;
+}
+
+
+/*Text Gradient*/ 
+.textGradient {
+    font-weight: 900;
+    background-image: linear-gradient(45deg, #FF0000 , #FFFF00 50%, #44FF00 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: center;
+    gap: 24vw;
+    align-items: center;
+    background-color: none;
+    position: relative;
+}
+
+#indexHeader{
+    background-color: #1e1e1e;
+    border-radius: 0vw 0vw 2vw 2vw;
+    transition: 0.8s;
+}
+#indexHeader:hover{
+    border-radius: 0vw 0vw 4vw 4vw;
+    padding-bottom: 7vw
+}
+
+.darkBackgroundHeader p, .darkBackgroundHeader a{
+    color: #ffffff;
+}
+.lightBackgroundHeader p, .lightBackgroundHeader a{
+    color: #1e1e1e;
+}
+
+.headerLogo{
+    font-weight: 900;
+    font-size: 1.7vw;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    font-size: 1.04vw;
+    font-weight: 900;
+}
+
+.trigger:hover + .dropdown{
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    padding: 0;
+    padding-top: 0.3vw;
+    position: absolute;
+}
+.dropdown:hover{
+    display: block;
+}
+
+.dropdown li{
+    padding: 0.2vw 0;
+}
+
+
+/*HERO SECTION*/
+
+.hero h1{
+    font-size: 5vw;
+    font-weight: 900;
+    max-width: 72vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+/*PROJECTS SECTION*/
+
+.projSectTitle{
+    font-weight: 900;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.relevantWork{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 80px;
+}
+
+.projectDiv{
+    max-width: 42vw;
+}
+
+.projectDiv img{
+    max-width: 42vw;
+    border-radius: 1vw;
+    transition: 0.5s;
+
+}
+.projectDiv img:hover{
+    max-width: 42vw;
+    border-radius: 4vw;
+}
+
+.projectDiv h1{
+    font-weight: 900;
+    font-size: 2.5vw;
+    margin: 10px 0;
+}
+
+.projectDiv p{
+    font-weight: 600;
+    font-size: 2vw;
+    margin: 10px 0;
+    color: #454545;
+}
+
+/*PROJECT PAGE*/
+
+.banner{
+    width: 100vw;
+    max-height: 80vh;
+    object-fit: cover;
+    transition: 0.8s;
+    border-radius: 0 0 2vw 2vw;
+margin-top: -5.5vw;
+z-index: -1;
+}
+.banner:hover{
+    border-radius: 0 0 4vw 4vw;
+
+}
+
+
+.content{
+    padding: 0 14vw;
+}
+
+.content p{
+    color: #454545;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+.content h2{
+    font-size: 3vw;
+    color: #1e1e1e;
+    text-align: left;
+}
+
+.content h3{
+    font-size: 2vw;
+    color: #1e1e1e;
+    text-align: right;
+}
+
+.content li{
+    color: #454545;
+    font-size: 1.2vw;
+}
+
+.content img{
+    max-width: 100vw;
+margin-top: 1vw;
+margin-left: -14vw;
+    border-radius: 2vw;
+    transition: 0.8s;
+}
+.content img:hover{
+    border-radius: 4vw;
+}
+
+.projectTitleLarge{
+    font-weight: 900;
+    font-size: 7vw;
+    margin-top: 3vh;
+    margin-bottom: -1vw;
+}
+
+.typeProj{
+    max-width: fit-content;
+    font-size: 1vw;
+    border: #454545 solid 1px;
+    color: #454545;
+    padding: 0.3vw 1.2vw;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+.projDetails p{
+    margin: 0.5vw 0;
+}
+
+.projDetails{
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+}
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #1e1e1e;
+    border-radius: 2vw 2vw 0 0;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    transition: 0.8s;
+}
+
+footer:hover{
+    border-radius: 4vw 4vw 0 0;
+}
+
+footer h1,h2,h3{
+    color: white;
+    text-align: center;
+    font-weight: 900;
+}
+
+footer h3{
+    font-size: 1.8vw;
+    padding: 50px;
+    margin: 0;
+}
+footer h1{
+    font-size: 5vw;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+footer h2{
+    font-size: 1.4vw;
+    border: 1px solid white;
+    max-width: 11vw;
+    border-radius: 0.7vw;
+    padding: 0.6vw;
+    margin: auto;
+    margin-bottom: 1vw;
+    text-align: center;
+    transition: 0.8s;
+}
+footer h2:hover{
+    background-color: white;
+    color: #1e1e1e;
+    cursor: pointer;
+    border-radius: 2vw;
+}
+
+#copyEmail{
+    background-color: white;
+    color: #1e1e1e
+}
+
+.target{
+    display: flex;
+    width: 1.1vw;
+    height: 1.1vw;
+    background-color: #FF0000;
+    border-radius: 10px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+
+#t1{
+    top: 0px;
+    position: absolute;
+}
+
+#t2{
+    left: 98.5vw;
+    top: -10vw;
+    position: relative;
+
+}
+
+#score{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+#hint{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    display: none;
+}
+
+#score:cont + #hint{
+    display: block;
+}
+

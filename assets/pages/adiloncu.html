@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer S3</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="darkBackgroundHeader">
+        <a href="/index.html" class="headerLogo">
+            <p>TAMER CANDEMIR</p>
+        </a>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="" class="trigger">PROJECTS</a>
+                <ul class="dropdown">
+                    <li><a href="beyond.html">BEYOND</a></li>
+                    <li><a href="slaygency.html">SLAYGENCY</a></li>
+                    <li><a href="adiloncu.html">ADİL ÖNCÜ</a></li>
+                    <li><a href="board-game.html">BOARD GAME</a></li>
+                    <!-- <li><a href="">PORTFOLIO S3</a></li> -->
+                </ul>
+            </li>
+            <li><a href="los.html" class="textGradient">LOs</a></li>
+        </ul>
+    </header>
+    <main>
+        <!--BANNER IMG-->
+        <img src="/assets/img/beyondBanner.png" alt="" class="banner">
+        <section class="content">
+
+            <h1 class="projectTitleLarge">ADİL ÖNCÜ</h1>
+            <p class="typeProj">Development</p>
+
+            <div class="projDetails">
+                <p>Timeline</p>
+                <p>Client</p>
+                <p><b>6 WEEKS</b></p>
+                <p><B>ADİL ÖNCÜ</B></p>
+            </div>
+
+            <br>
+            <p>
+                Abdullah Adil Oncu is a game enthusiast studying ICT & Game Design at Fontys. I designed and developed a
+                portfolio website for him to support his internship applications.</p>
+            <a href="https://adiloncu.com/" target="_blank" class="blueLink">adiloncu.com<i>&#x2197;</i></a>
+            <br>
+
+            <h2>INTERVIEW</h2>
+            <p>I interviewed Adil to get to know him and to understand what exactly he needs.
+                <BR></BR>
+                He mentioned that he needed a portfolio where he could display his past projects and experience.
+                <br><br>
+                After the interview, I told him that a website would be the best way to showcase his work. I gave him
+                some options, and explained the benefits and drawbacks of all.
+                <br><br>
+                <b>Options:</b>
+            <ul>
+                <li><b>Wix Website Builder</b></li>
+                <li><b>Wordpress</b></li>
+                <li><b>I will design and develop everything</b></li>
+            </ul>
+            <p>He wanted to have flexibility with the design and help me with my learning outcomes. So, he decided to
+                leave all the work to me :</p>
+            </p>
+
+            <h2>INSPIRATION</h2>
+            <p>I browsed through portfolios of various game designers / developers and gathered screenshots of things I
+                found cool. I also asked Adil to send me portfolio examples that he finds interesting.</p>
+            <img src="/assets/img/inspirationAdilOncu.png" alt="">
+
+            <h2>ANALYSE</h2>
+            <p>After taking a look at several portfolios, I realized some common design choices in the structure. I
+                noted the ones I thought would be useful in this project.
+                <br><br>
+                <b>Findings:</b>
+            <ul>
+                <li>The focus is on projects and not explaining who they are.</li>
+                <li>People tell more about themselves at the bottom of the Home page.</li>
+                <li>Show, don't tell. Use as many screenshots / recordings as possible.</li>
+                <li>Link the products, game jam results, prizes, and code (GitHub).</li>
+                <li>Show other study or work experience.</li>
+            </ul>
+
+            <p>I decided to include projects, experience, and an about text on the Home page.
+                <br><br>
+                Also, I requested from Adil screenshots / recordings from all his games to display them in the process
+                explanation of each project.
+            </p>
+            </p>
+
+            <h2>DESIGN</h2>
+            <p>The design of this project was inspired mostly from Tomas Wallin and Surya Narendran's portfolios.
+                <br><br>
+                Adil's website had to be responsive, so that he could show it to anyone he meets in expos, events, and
+                career days. While designing, I always kept this fact in mind.
+            </p>
+            <h3>WIREFRAMES | LO-FI</h3>
+            <p>I created wireframes that shows how each section will be displayed, both on mobile and desktop. </p>
+            <img src="/assets/img/wireframeLoFiAdilOncu.png" alt="">
+
+            <h3>PROTOTYPE | MID-FI</h3>
+            <p>Before Adil sent the necessary content, images and videos, I made this mid-fidelity prototype using Shrek
+                as placeholder.</p>
+            <img src="/assets/img/prototypeMidFiAdilOncu.png" alt="">
+
+            <h3>FEEDBACK</h3>
+            <p>I presented the current situation to Adil, demoing the mid-fi prototype and asked for his opinion on the
+                design.
+                <br><br>
+                He noted that I presented clearly and “convinced” him that this design was the best.
+                <br><br>
+                Initially, I had blue and red as accent colors. I changed that after Adil mentioned that he liked green
+                and purple more.
+            </p>
+
+            <h2>DEVELOPMENT</h2>
+            <p>I coded the website using HTML & CSS, taking responsiveness into consideration. I kept the code in
+                <a href="https://github.com/TamerTalha/adilPortfolio" target="_blank"
+                    class="blueLink">GitHub<i>&#x2197;</i></a>
+                for version control. I wrote comments in the code for Adil to be able to edit things easily.
+            </p>
+
+            <h3>FEEDBACK</h3>
+            <p>He told me that the code looks clean and understandable. He asked some small questions like “Can I use a
+                gif instead of an image?”, and I answered them successfully.</p>
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+    <footer>
+            <h3>Still have some social <b class="textGradient">battery</b> left?</h3>
+            <h1>LET'S TALK!</h1>
+            <!-- <h2>INSTAGRAM</h2>
+            <h2>LINKEDIN</h2> -->
+            <h2 id="copyEmail">COPY EMAIL</h2>
+        </footer>
+
+        <script>
+
+            // COPY EMAIL FOOTER
+
+            const copyEmailEl = document.getElementById("copyEmail");
+
+  copyEmailEl.addEventListener("click", () => {
+    const email = "t.candemir@student.fontys.nl";
+    navigator.clipboard.writeText(email).then(() => {
+      // Store original text
+      const originalText = copyEmailEl.textContent;
+
+      // Apply styles and update text
+      copyEmailEl.textContent = "COPIED!";
+      copyEmailEl.style.backgroundColor = "#1e1e1e";
+      copyEmailEl.style.color = "#fff";
+
+      // Reset after 1.5 seconds
+      setTimeout(() => {
+        copyEmailEl.textContent = originalText;
+        copyEmailEl.style.backgroundColor = "";
+        copyEmailEl.style.color = "";
+      }, 1500);
+    });
+  });
+          </script>
+    </main>
+   
+</body>
+
+</html>

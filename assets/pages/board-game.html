@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer S3</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="lightBackgroundHeader">
+        <a href="/index.html" class="headerLogo">
+            <p>TAMER CANDEMIR</p>
+        </a>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="" class="trigger">PROJECTS</a>
+                <ul class="dropdown">
+                    <li><a href="beyond.html">BEYOND</a></li>
+                    <li><a href="slaygency.html">SLAYGENCY</a></li>
+                    <li><a href="adiloncu.html">ADİL ÖNCÜ</a></li>
+                    <li><a href="board-game.html">BOARD GAME</a></li>
+                    <!-- <li><a href="">PORTFOLIO S3</a></li> -->
+                </ul>
+            </li>
+            <li><a href="los.html" class="textGradient">LOs</a></li>
+        </ul>
+    </header>
+    <main>
+        <!--BANNER IMG-->
+        <img src="/assets/img/boardGameBanner.webp" alt="" class="banner">
+        <section class="content">
+
+            <h1 class="projectTitleLarge">PIO-PERA</h1>
+            <p class="typeProj">Group Project</p>
+
+            <div class="projDetails">
+                <p>Timeline</p>
+                <p>Client</p>
+                <p><b>Very long</b></p>
+                <p><B>Beyond the Board</B></p>
+            </div>
+
+            <br>
+            <p>
+                Board game is a board game where you try your best to fill your passport with stamps. I mostly worked on
+                the development part of this project.</p>
+            <br>
+
+            <h2>INTERVIEW</h2>
+            <p>We interviewed Petra & Maikel separately to find answers to our questions before starting with the
+                project.</p>
+            <br>
+
+            <h3>QUESTIONS</h3>
+            <p>Me and Kourosh prepared the questions by giving instant feedback to each other and choosing the necessary
+                ones wisely.</p>
+
+            <h3>ANSWERS</h3>
+            <p>During the interview, I took notes from the answers given by Petra & Maikel. We also voice recorded the
+                interviews (with their permission) to be able to go back and see if we missed any important point.
+            </p>
+
+            <h2>RESEARCH</h2>
+            <p>I did an observation research during a board game event of Proxy study association. I was able to observe
+                GenZ playing different board games. I focused on interactions, emotions, and mechanics. <BR><BR> Before
+                the event, I created a template for myself to fill in that made it easier to take notes. In this
+                template I included some questions and a table where i noted the events, reactions, and design ideas for
+                the problems.</p>
+
+            <h2>CONCEPT</h2>
+            <p>The game concept is a chaotic twist on tradition: Pio-Pera uses reverse logic, absurd mechanics, and digital surprises to create joyful confusion and viral fun. Players move anti-clockwise, subtract dice rolls, and embrace nonsense as strategy. <BR><BR> Designed for a generation that lives on memes and ironic humor, every rule-break and bizarre moment is intentional. It's not about winning, it's about laughing.</p>
+
+            <h2>DESIGN</h2>
+            <p>We designed the board, currency, stickers, and stamps on our own which is one of the factors that makes this game unique.</p>
+            
+            <h3>BOARD</h3>
+            <img src="/assets/img/gameBoard.png" alt="">
+            <h3>CURRENCY</h3>
+            <img src="/assets/img/currency.png" alt="">
+            <h3>STICKERS & STAMPS</h3>
+            <img src="/assets/img/stickerStamps.png" alt="">
+
+            <h2>PRODUCTION</h2>
+            <h3>GAME COMPONENTS</h3>
+            <p>We printed the board, currency, passport, stickers, and stamps from the sticker printer in R10. We glued the board to a cardboard, and packed the remaining components for easier transportation.</p>
+            
+            <h3>APP</h3>
+            <p>I and Kourosh worked on the development of the app. We used React, Vite and IndexedDB to code this project. </p>
+
+            <h2>USER TESTING</h2>
+            <p>We user tested the our game in multiple events such as the Night of the Nerds. I was the responsible person to stay by our stand and explain the project to visitors in all events.
+                <br><br>
+                From the last user testing in the Night of the Nerds, we verified that the game has no major issues and is ready to be published.</p>
+            <img src="/assets/img/userTesting.jpg" alt="">
+
+            <h2>FEEDBACK</h2>
+            <p>The teachers, assessors, and clients noted that the project is completed successfully, with a advice report provided for the client by our group.</p>
+            
+
+        </section>
+        <footer>
+            <h3>Still have some social <b class="textGradient">battery</b> left?</h3>
+            <h1>LET'S TALK!</h1>
+            <!-- <h2>INSTAGRAM</h2>
+            <h2>LINKEDIN</h2> -->
+            <h2 id="copyEmail">COPY EMAIL</h2>
+        </footer>
+
+        <script>
+
+            // COPY EMAIL FOOTER
+
+            const copyEmailEl = document.getElementById("copyEmail");
+
+  copyEmailEl.addEventListener("click", () => {
+    const email = "t.candemir@student.fontys.nl";
+    navigator.clipboard.writeText(email).then(() => {
+      // Store original text
+      const originalText = copyEmailEl.textContent;
+
+      // Apply styles and update text
+      copyEmailEl.textContent = "COPIED!";
+      copyEmailEl.style.backgroundColor = "#1e1e1e";
+      copyEmailEl.style.color = "#fff";
+
+      // Reset after 1.5 seconds
+      setTimeout(() => {
+        copyEmailEl.textContent = originalText;
+        copyEmailEl.style.backgroundColor = "";
+        copyEmailEl.style.color = "";
+      }, 1500);
+    });
+  });
+          </script>
+    </main>
+    
+</body>
+
+</html>

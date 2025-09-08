@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer S3</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="darkBackgroundHeader" id="indexHeader">
+        <a href="index.html" class="headerLogo"><p>TAMER CANDEMIR</p></a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li ><a href="" class="trigger">PROJECTS</a>
+            <ul class="dropdown">
+                <li><a href="/assets/pages/beyond.html">BEYOND</a></li>
+                <li><a href="/assets/pages/slaygency.html">SLAYGENCY</a></li>
+                <li><a href="/assets/pages/adiloncu.html">ADİL ÖNCÜ</a></li>
+                <li><a href="/assets/pages/board-game.html">BOARD GAME</a></li>
+                <!-- <li><a href="">PORTFOLIO S3</a></li> -->
+            </ul>
+            </li>
+            <li><a href="/assets/pages/los.html" class="textGradient">LOs</a></li>
+        </ul>
+    </header>
+    <main>
+
+        <section class="hero">
+            <h1>ICT & MEDIA DESIGN STUDENT WITH<br>SOME PASSION IN BRANDING.</h1>
+        </section>
+
+        <h1 class="projSectTitle">RELEVANT WORK</h1>
+
+        <section class="relevantWork">
+
+            <div class="projectDiv">
+                <a href="/assets/pages/beyond.html">
+                    <img src="/assets/img/Beyond.png" alt="">
+                </a>
+                <h1>BEYOND</h1>
+                <p>Branding project group 4</p>
+            </div>
+            
+            <div class="projectDiv">
+                <a href="/assets/pages/slaygency.html">
+                    <img src="/assets/img/Slaygency.png" alt="">
+                </a>
+                <h1>SLAYGENCY</h1>
+                <p>Re-branding of a W studio</p>
+            </div>
+            
+            <div class="projectDiv">
+                <a href="/assets/pages/adiloncu.html">
+                    <img src="/assets/img/AdilOncu.png" alt="">
+                </a>
+                <h1>ADİL ÖNCÜ</h1>
+                <p>Game Design student portfolio</p>
+            </div>
+            
+            <div class="projectDiv">
+                <a href="/assets/pages/board-game.html">
+                    <img src="/assets/img/boardGameSq.jpg" alt="">
+                </a>
+                <h1>BOARD GAME</h1>
+                <p>Some cool stuff being made</p>
+            </div>
+            
+            <!-- <div class="projectDiv">
+                <img src="/assets/img/placeholder.png" alt="">
+                <h1>PORTFOLIO S3</h1>
+                <p>Showcasing my projects proudly</p>
+            </div> -->
+
+        </section>
+
+
+        <footer>
+            <h3>Still have some social <b class="textGradient">battery</b> left?</h3>
+            <h1>LET'S TALK!</h1>
+            <!-- <h2>INSTAGRAM</h2>
+            <h2>LINKEDIN</h2> -->
+            <h2 id="copyEmail">COPY EMAIL</h2>
+        </footer>
+
+        <script>
+
+            // COPY EMAIL FOOTER
+
+            const copyEmailEl = document.getElementById("copyEmail");
+
+  copyEmailEl.addEventListener("click", () => {
+    const email = "t.candemir@student.fontys.nl";
+    navigator.clipboard.writeText(email).then(() => {
+      // Store original text
+      const originalText = copyEmailEl.textContent;
+
+      // Apply styles and update text
+      copyEmailEl.textContent = "COPIED!";
+      copyEmailEl.style.backgroundColor = "#1e1e1e";
+      copyEmailEl.style.color = "#fff";
+
+      // Reset after 1.5 seconds
+      setTimeout(() => {
+        copyEmailEl.textContent = originalText;
+        copyEmailEl.style.backgroundColor = "";
+        copyEmailEl.style.color = "";
+      }, 1500);
+    });
+  });
+          </script>
+</main>
+</body>
+</html>
